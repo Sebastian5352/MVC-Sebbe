@@ -2,9 +2,6 @@ body {
     margin: 0 auto;
     width: 800px;
     background-color: skyblue;
-}
-body {
-    background: url('../images/background.jpg');
     background-size: cover;
 }
 
@@ -15,4 +12,12 @@ header {
 
 h1 {
     border-bottom: 4px double #2bff00;
+}
+
+
+.profile-image {
+    max-width: 300px;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
 }

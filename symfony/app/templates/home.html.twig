@@ -1,7 +1,11 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Hem{% endblock %}
 
 {% block body %}
-    <h1>Home</h1>
+    <div class="presentation">
+        <h1>Hej! Jag är Sebastian</h1>
+        <p>Jag är 20 år och ska fylla 21 innom några månader</p>
+        <img src="{{ asset('img/me.jpg') }}" alt="Bild på Sebastian" class="profile-image">
+    </div>
 {% endblock %}
