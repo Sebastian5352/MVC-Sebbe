@@ -13,7 +13,7 @@
         {% endblock %}
     </head>
     <body>
-        <header class="site-header" style="background-image: url({{ asset('img/background.jpg') }})">
+        <header class="site-header" style="background-image: url({{ asset('img/eight-ball-27902534.webp') }})">
             <span class="site-title">My Symfony Site</span>
         </header>
         <nav>
@@ -21,6 +21,9 @@
                 <li><a href="{{ path('home') }}">Home</a></li>
                 <li><a href="{{ path('about') }}">About</a></li>
                 <li><a href="{{ path('lucky_number') }}">Lucky number</a></li>
+                <li><a href="{{ path('report') }}">Report</a></li>
+                <li><a href="{{ path('report_kmom01') }}">Redovisning</a></li>
+
             </ul>
         </nav>
         {% block body %}{% endblock %}

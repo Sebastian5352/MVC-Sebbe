@@ -1,10 +1,17 @@
-
 {% extends "base.html.twig" %}
 
-{% block title %}Magic number{% endblock %}
+{% block title %}Lucky Number{% endblock %}
 
 {% block body %}
-    <h1>Magic number</h1>
-    <p>Welcome to my awesome magical homepage.</p>
-    <p>This is the current magic number: {{ number }}</p>
+        <div class="lucky-container">
+            <h1>Your Lucky Number!</h1>
+            <p>Welcome to the lucky number generator. Reload the page to get a new lucky number!</p>
+            <div class="lucky-number">
+                <p>Your lucky number is: <span>{{ number }}</span></p>
+            </div>
+            <div class="lucky-images">
+                <img src="{{ asset('img/Lucky_number_logo.png') }}" alt="Lucky Image 1">
+                <img src="{{ asset('img/number8.webp') }}" alt="Lucky Image 2">
+            </div>
+        </div>
 {% endblock %}

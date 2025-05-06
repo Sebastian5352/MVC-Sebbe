@@ -31,4 +31,17 @@ class LuckyControllerTwig extends AbstractController
     {
         return $this->render('about.html.twig');
     }
+
+    #[Route("/report", name: "report")]
+    public function report(): Response
+    {
+        return $this->render('report.twig');
+    }
+
+    #[Route('/reportkmom01', name: 'report_kmom01')]
+    public function reportKmom01(): Response
+    {
+        return $this->render('report_kmom01.html.twig');
+    }
+
 }

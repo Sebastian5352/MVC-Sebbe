@@ -2,12 +2,19 @@
 
 {% block title %}About{% endblock %}
 
-
 {% block body %}
-    <h1>About</h1>
-    <p>MVC har 3 olika syften Model, View och Controller. Modelen har datan och view kör med HTML elementet slutligen controller tar hand om model, och uppdaterar view </p>
-    <a href="{{ asset('img/glider.svg') }}">
-        <img src="{{ asset('img/glider.svg') }}" alt="">
-    </a>
-        <p><a href="https://github.com/dbwebb-se/mvc" target="_blank">GitHub</a>.</p>
+    <h1>About MVC</h1>
+        <div class="about-container">
+            <div class="about-text">
+                <p>MVC står för Model, View och Controller och är en designmönster som används för att separera applikationens logik, data och presentation. 
+                Modellen hanterar data och affärslogik, vyn ansvarar för att visa data för användaren, och kontrollern hanterar användarens interaktioner och uppdaterar modellen och vyn.</p>
+                <p>För mer information om kursen, besök kursens GitHub-repo:</p>
+                <p><a href="https://github.com/dbwebb-se/mvc" target="_blank">Kursens GitHub-repo</a></p>
+                <p>Här är även en länk till mitt eget GitHub-repo för kursen:</p>
+                <p><a href="https://github.com/Sebastian5352/MVC-Sebbe" target="_blank">Sebastians GitHub-repo</a></p>
+            </div>
+            <div class="about-image">
+                <img src="{{ asset('img/mvc-diagram.webp') }}" alt="MVC Diagram" class="representative-image">
+            </div>
+        </div>
 {% endblock %}
